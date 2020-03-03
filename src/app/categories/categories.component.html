@@ -1,0 +1,23 @@
+<p>categories works!</p>
+
+<a routerLink="/dashboard">dashboard</a>
+
+<table>
+  <tr *ngFor="let category of categories">
+    <td>
+      {{category.title}}
+    </td>
+    <td>
+      {{category.sum}}
+    </td>
+    <td>
+      <button (click)="removeCategory(category.id)">remove</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <input [formControl]="categoryName">
+      <button (click)="addCategory()">add category</button>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "homefinance-3f9c5": {
+      "hosting": {
+        "homeFinance": [
+          "homefinance-3f9c5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "homefinance-3f9c5"
+  }
+}

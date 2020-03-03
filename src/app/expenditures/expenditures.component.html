@@ -1,0 +1,43 @@
+<p>expenditures works!</p>
+
+<table>
+  <th>
+    Expenditure
+  </th>
+
+  <tr *ngFor="let expenditure of expenditures">
+    <td>
+      {{expenditure.icon}}
+    </td>
+    <td>
+      {{expenditure.category}}
+    </td>
+    <td>
+      {{formatDate(expenditure.date)}}
+    </td>
+    <td>
+      {{expenditure.sourceType}}
+    </td>
+    <td>
+      {{expenditure.sourceName}}
+    </td>
+    <td>
+      {{expenditure.oldValue}}
+    </td>
+    <td>
+      {{expenditure.newValue}}
+    </td>
+    <td>
+      {{expenditure.description}}
+    </td>
+    <td>
+      {{expenditure.amount}}
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <button (click)="addExpend()">add exp</button>
+    </td>
+  </tr>
+</table>
